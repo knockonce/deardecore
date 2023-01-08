@@ -51,7 +51,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #106eea;
+  border: 6px solid #b19777;
   border-top-color: #e2eefd;
   border-radius: 50%;
   width: 60px;
@@ -90,7 +90,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #106eea;
+  background: #b19777;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -104,7 +104,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #3284f1;
+  background: #553131;
   color: #fff;
 }
 
@@ -478,7 +478,8 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.6);
+  /* background: rgba(255, 255, 255, 0.6); */
+  background: rgba(255, 255, 255, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -522,6 +523,7 @@ h6 {
   transition: 0.5s;
   color: #fff;
   background: #b19777;
+  border-color: transparent;
 }
 
 #hero .btn-get-started:hover {
@@ -611,8 +613,8 @@ section {
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: #e7f1fd;
-  color: #106eea;
+  background: #FFC1B6;
+  color: #553131;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -625,7 +627,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #106eea;
+  color: #b19777;
 }
 
 .section-title p {
@@ -712,6 +714,7 @@ section {
   content: "";
   position: absolute;
   background: #cbe0fb;
+  /* background-image: linear-gradient(315deg, #715c41, #b19777); */
   right: 0;
   left: 0;
   bottom: 0;
@@ -721,7 +724,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #106eea;
+  background-image: linear-gradient(315deg, #715c41, #b19777);
   top: 0;
   border-radius: 0px;
 }
@@ -733,7 +736,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: #b19777;
   transition: all 0.3s ease-in-out;
 }
 
@@ -932,7 +935,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #f1f6fe;
+  background: #FFC1B6;
   border-radius: 4px;
   border: 1px solid #deebfd;
   display: flex;
@@ -943,7 +946,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #3b8af2;
+  color: #553131;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -972,13 +975,72 @@ section {
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover .icon i {
-  color: #106eea;
+  /* color: #106eea; */
+  color: #b19777;
+}
+
+.services .icon-box:hover .icon i {
+  color: #553131;
 }
 
 .services .icon-box:hover .icon {
-  border-color: #106eea;
+  border-color: #553131;
 }
 
+/*--------------------------------------------------------------
+# How It Works
+--------------------------------------------------------------*/
+#howItWorks .faq-list {
+  list-style: none;
+}
+
+#howItWorks i {
+  border: 2px solid #FFC1B6;
+  padding: 12px 15px;
+  border-radius: 50%;
+  margin: 5%;
+}
+
+#howItWorks li {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #3c3c3c;
+  transition: 0.3s;
+  margin: 3.7% auto;
+  padding: 0.25%;
+}
+
+#howItWorks li i {
+  color: #b19777;
+}
+
+@media (min-width:200px) and (max-width:430px) {
+  #howItWorks {
+    text-align: center;
+  }
+
+  #howItWorks ul div {
+    margin-bottom: 10%;
+  }
+
+  #howItWorks li {
+    padding-left: 0px;
+    margin-bottom: 3%;
+  }
+
+  #howItWorks i {
+    display: block;
+    margin: 0px auto;
+    width: 20%;
+    padding: 20px 0px !important;
+    margin-bottom: 5%;
+  }
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1473,7 +1535,7 @@ section {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #0d58ba;
+  color: #b19777;
   transition: 0.3s;
 }
 
@@ -1498,7 +1560,7 @@ section {
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #106eea;
+  color: #b19777;
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -1523,10 +1585,10 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #106eea;
+  color: #b19777;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #b3d1fa;
+  border: 2px dotted #b19777;
 }
 
 .contact .info-box h3 {
@@ -1615,7 +1677,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #106eea;
+  background: #b19777;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1624,7 +1686,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #3b8af2;
+  background: #553131;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1698,7 +1760,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #106eea;
+  background: #b19777;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1706,7 +1768,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #0d58ba;
+  background: #553131;
 }
 
 #footer .footer-top {
@@ -1758,7 +1820,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #106eea;
+  color: #b19777;
   font-size: 18px;
   line-height: 1;
 }
@@ -1782,13 +1844,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #106eea;
+  color: #b19777;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #106eea;
+  background: #b19777;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1801,7 +1863,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #3b8af2;
+  background: #553131;
   color: #fff;
   text-decoration: none;
 }
